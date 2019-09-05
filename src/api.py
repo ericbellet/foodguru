@@ -33,7 +33,7 @@ class Photos(Resource):
     @api.doc(responses={ 200: 'OK', 500: 'Internal Error' }, params={ '?photoreference': 'Specify the photoreference associated with the restaurant' })
     def get(self):   
         try: 
-            self.key = "AIzaSyCTqU5GzJz2d2nf8yJgvakQp9gFLbTHkFA"
+            self.key = ""
             self.url = "https://maps.googleapis.com/maps/api/place/photo?"
             self.maxwidth = 400
             photoreference = request.args.get('photoreference')
